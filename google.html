@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <head>
     <title>Google | Search</title>
-    <link rel="stylesheet" type="text/css" href="/home/jeff/Desktop/the_odin_project/google-homepage/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
 <body>
   <header>
     <ul>
@@ -18,9 +20,13 @@
         </li>
         <li id="nav-images"><a href="https://www.google.com/imghp?hl=en&tab=wi">Images</a>
         </li>
-        <li id="apps-img"><a href="https://www.google.com">app</a>
-        </li>
-        <li id="acct-img"><a href="https://www.google.com">acct</a>
+        <li id="apps-img"><a href="https://www.google.com"><i class="material-icons">
+          apps
+          </i></a>
+        </li>>
+        <li id="acct-img"><a href="https://www.google.com"><i class="material-icons">
+          account_circle
+          </i></a>
         </li>
       </div>   
     </ul>
@@ -33,7 +39,9 @@
 
 <form action="http://www.google.com/search">
   <div class="search-bar">
- <input id="search-bar" type="text" name="q" size="32">
+    <input id="search-box" type=text name=q size="32" id=q>
+    <input type="hidden" name="ie" value="utf-8">
+    <input type="hidden" name="oe" value="utf-8">
     <img id="voice" src="https://asuar.gitlab.io/google-homepage/images/voice.png">
   </div>
   <div class="search-buttons">
